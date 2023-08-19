@@ -3,13 +3,20 @@ import { AiFillProfile } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const Contact = () => {
   return (
     <>
-      <div className="bg-[#222] min-h-screen text-white">
+      <motion.div  
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }} 
+      
+      className="bg-[#222] min-h-screen text-white">
         <div className=" p-10 text-4xl font-extrabold flex items-center justify-center">
-          <h1>ABOUT </h1>
+          <h1>CONTACT </h1>
           <span className="text-yellow-400 mx-2">ME</span>
         </div>
         <div className="flex pb-10 justify-center items-center text-center ">
@@ -99,7 +106,7 @@ const Contact = () => {
         </div>
 
         {/*end Context details */}
-      </div>
+      </motion.div>
     </>
   );
 };

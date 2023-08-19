@@ -2,10 +2,16 @@ import React from "react";
 import profile from "../Assets/dark-about.jpg";
 import { Link } from "react-router-dom";
 import { ImCalendar, ImDownload3 } from "react-icons/im";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="bg-[#222] h-fit text-white">
+    <motion.div 
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
+    
+    className="bg-[#222] h-fit text-white">
       <div className=" p-10 text-4xl font-extrabold flex items-center justify-center">
         <h1>ABOUT </h1>
         <span className="text-yellow-400 mx-2">ME</span>
@@ -188,7 +194,7 @@ const About = () => {
       </div>
 
       {/*end Skills */}
-    </div>
+    </motion.div>
   );
 };
 

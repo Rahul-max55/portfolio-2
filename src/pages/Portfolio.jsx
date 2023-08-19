@@ -1,10 +1,17 @@
 import PortfolioCard from "../components/ProtfolioCard";
+import { motion } from "framer-motion";
+
 
 const Portfolio = () => {
 
   return (
     <>
-      <div className="bg-[#222] h-fit max-w-screen text-white">
+      <motion.div 
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
+
+      className="bg-[#222] h-fit max-w-screen text-white">
         <div className=" p-10 text-4xl font-extrabold flex items-center justify-center">
           <h1>MY </h1>
           <span className="text-yellow-400 mx-2">PORTFOLIO</span>
@@ -22,7 +29,7 @@ const Portfolio = () => {
           {[4 ,2,3,3,4,4].map((val , i) =>  <PortfolioCard key={i} /> )}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
