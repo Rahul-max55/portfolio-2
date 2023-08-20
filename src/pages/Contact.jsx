@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-const Contact = () => {
+const Contact = ({color}) => {
+
+  const bgValue = {backgroundColor:color} ;
+  const textValue = {color:color} ;
+  const borderValue = {borderColor:color} ;
+
   return (
     <>
       <motion.div  
@@ -17,14 +22,14 @@ const Contact = () => {
       className="bg-[#222] min-h-screen text-white">
         <div className=" p-10 text-4xl font-extrabold flex items-center justify-center">
           <h1>CONTACT </h1>
-          <span className="text-yellow-400 mx-2">ME</span>
+          <span style={textValue} className="text-yellow-400 mx-2">ME</span>
         </div>
         <div className="flex pb-10 justify-center items-center text-center ">
-          <hr className="bg-yellow-400 w-20 h-1" />
+          <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
           <span className="px-4 text-center">
             I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
           </span>
-          <hr className="bg-yellow-400 w-20 h-1" />
+          <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
         </div>
 
         {/* Context details */}
@@ -99,7 +104,7 @@ const Contact = () => {
               />
             </form>
 
-              <Link to="/about" className="flex px-3 py-1 items-center justify-center bg-yellow-500 transition-colors text-base xl:text-lg font-medium text-white space-x-2 rounded-full shadow-lg border-2 border-yellow-400 hover:bg-transparent">
+              <Link style={{...borderValue , ...bgValue}} to="/about" className="flex px-3 py-1 items-center justify-center bg-yellow-500 transition-colors text-base xl:text-lg font-medium text-white space-x-2 rounded-full shadow-lg border-2 border-yellow-400 hover:bg-transparent">
                 <CgProfile /> <span>Send Message</span>
               </Link>
           </div>

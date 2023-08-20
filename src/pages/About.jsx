@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import { ImCalendar, ImDownload3 } from "react-icons/im";
 import { motion } from "framer-motion";
 
-const About = () => {
+const About = ({color}) => {
+
+
+  const bgValue = {backgroundColor:color} ;
+  const textValue = {color:color} ;
+  const borderValue = {borderColor:color} ;
+
   return (
     <motion.div 
       initial={{ x: 300, opacity: 0 }}
@@ -14,19 +20,19 @@ const About = () => {
     className="bg-[#222] h-fit text-white">
       <div className=" p-10 text-4xl font-extrabold flex items-center justify-center">
         <h1>ABOUT </h1>
-        <span className="text-yellow-400 mx-2">ME</span>
+        <span style={textValue} className="text-yellow-400 mx-2">ME</span>
       </div>
       <div className="flex pb-10 justify-center items-center text-center ">
-        <hr className="bg-yellow-400 w-20 h-1" />
+        <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
         <span className="px-4">
           I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
         </span>
-        <hr className="bg-yellow-400 w-20 h-1" />
+        <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
       </div>
 
       <div className="w-[85vw] md:w-[75vw] text-white  m-auto h-[150vh] xl:h-[75vh]  flex justify-between items-center xl:flex-row flex-col">
         <div className="md:w-fit h-[52vh] lg:h-full  relative">
-          <div className="w-full h-full md:h-full top-5 left-5 md:top-10 md:left-10 absolute border-[8px] border-yellow-500"></div>
+          <div style={borderValue} className="w-full h-full md:h-full top-5 left-5 md:top-10 md:left-10 absolute border-[8px] border-yellow-500"></div>
           <img src={profile} alt="photo" className="relative z-10" />
         </div>
         <div className="w-full md:w-4/5 xl:w-1/2  md:m-auto flex justify-center items-center h-full ">
@@ -40,6 +46,7 @@ const About = () => {
               <span>First Name: Rahul</span>
               <Link
                 to="/about"
+                style={bgValue}
                 className="flex px-1 py-2 md:px-5 md:py-2 items-center justify-center bg-yellow-500 transition-colors text-sm md:text-base xl:text-base font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:bg-transparent"
               >
                 <ImDownload3 /> <span>Downlaod My CV</span>
@@ -54,6 +61,7 @@ const About = () => {
               <span>First Name: Rahul</span>
               <Link
                 to="/about"
+                style={bgValue}
                 className="flex px-1 invisible py-2 md:px-5 md:py-2 items-center justify-center bg-yellow-500 transition-colors text-sm md:text-base xl:text-base font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:bg-transparent"
               >
                 <ImDownload3 /> <span>Downlaod My CV</span>
@@ -72,7 +80,7 @@ const About = () => {
           <h2 className="text-2xl  text-white font-semibold py-4">
             EXPERIENCE
           </h2>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className="w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -86,7 +94,7 @@ const About = () => {
               nonummy.
             </li>
           </ul>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -100,7 +108,7 @@ const About = () => {
               nonummy.
             </li>
           </ul>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -120,7 +128,7 @@ const About = () => {
           <h2 className="text-2xl  text-white font-semibold py-4">
             EXPERIENCE
           </h2>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -134,7 +142,7 @@ const About = () => {
               nonummy.
             </li>
           </ul>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -148,7 +156,7 @@ const About = () => {
               nonummy.
             </li>
           </ul>
-          <ul className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
+          <ul style={borderValue} className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 ">
             <span></span>
             <li className="flex items-center ">
               <ImCalendar className="mr-2" /> 2017-2019
@@ -172,22 +180,22 @@ const About = () => {
       <div className="w-10/12 m-auto flex-col pb-20 lg:py-20 flex justify-around items-start  bg-[#222]">
         <h1 className="text-2xl  text-white font-semibold py-4">SKILLS</h1>
         <div className=" grid sm:grid-cols-2 md:grid-cols-3 w-full gap-4 md:gap-8  ">
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
             HTML
           </h3>
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
            JavaScript
           </h3>
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
             HTML
           </h3>
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
             HTML
           </h3>
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
             HTML
           </h3>
-          <h3 className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
+          <h3 style={borderValue} className="border-b-2 border-yellow-500 min-w-40 py-3 text-xl">
             HTML
           </h3>
         </div>

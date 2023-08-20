@@ -8,7 +8,7 @@ import { ImBlogger} from "react-icons/im";
 import { RxCross2} from "react-icons/rx";
 import { FiMenu } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({color}) => {
   const [hideNav, sethideNav] = useState(true);
 
   const handleClose = (e) => {
@@ -21,6 +21,10 @@ const Navbar = () => {
   useEffect(()=>{
     sethideNav(true);
   },[])
+
+  const active = {
+  color:color
+  }
 
 
   return (
@@ -43,35 +47,40 @@ const Navbar = () => {
         >
           <NavLink
             to="/"
-            className="relative hover:text-yellow-400  focus:text-yellow-400 cursor-pointer"
+            style={active}
+            className={`relative cursor-pointer`}
           >
             <FaHome />
             <span className="absolute top-0 left-16 text-xl bg-gray-500 px-2 rounded-lg">HOME</span>
           </NavLink>
           <NavLink
             to="/about"
-            className="relative hover:text-yellow-400  focus:text-yellow-400 cursor-pointer"
+            style={active}
+            className="relative  cursor-pointer"
           >
             <BsFillPersonFill />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >ABOUT</span>
           </NavLink>
           <NavLink
             to="/portfolio"
-            className="relative hover:text-yellow-400  focus:text-yellow-400 cursor-pointer"
+            style={active}
+            className="relative  cursor-pointer"
           >
             <BiSolidBriefcase />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >PORTFOLIO</span>
           </NavLink>
           <NavLink
             to="/contact"
-            className="relative hover:text-yellow-400  focus:text-yellow-400 cursor-pointer"
+            style={active}
+            className="relative  cursor-pointer"
           >
             <HiMail />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >CONTACT</span>
           </NavLink>
           <NavLink
             to="/blog"
-            className="relative hover:text-yellow-400  focus:text-yellow-400 cursor-pointer"
+            style={active}
+            className="relative  cursor-pointer"
           >
             <ImBlogger />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >BLOG</span>
