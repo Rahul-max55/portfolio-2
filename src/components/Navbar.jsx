@@ -34,15 +34,15 @@ const Navbar = ({color}) => {
           hideNav ? "h-14 md:h-20 overflow-hidden" : "h-96"
         }`}
       >
-        <div
+        <div data-modal-target="defaultModal"
           className={`bg-gray-600 w-14 h-24 md:w-20 md:h-24 rounded-full hover:text-gray-100 cursor-pointer flex justify-evenly text-3xl text-gray-300 items-center flex-col `}
           onClick={handleClose}
         >
          {hideNav ? <FiMenu /> : <RxCross2 />} 
         </div>
-        <div
+        <div  tabindex="-1"
           className={`bg-gray-600 w-14 md:w-20 rounded-full flex transition-all duration-500 ease-linear  justify-between text-2xl items-center text-gray-300 flex-col ${
-            hideNav ? "h-0 overflow-hidden" : "h-96 pb-8"
+            hideNav ? "!h-0 overflow-hidden" : "h-96 pb-8"
           }`}
         >
           <NavLink

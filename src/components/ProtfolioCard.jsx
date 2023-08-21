@@ -23,7 +23,7 @@ const ProtfolioCard = ({bgValue}) => {
         <p
           onMouseLeave={handleHover}
           style={bgValue}
-          className={`absolute z-20 w-full h-full   top-0 p-2 text-black transition-[right] duration-700 text-center flex justify-center bg-yellow-400 rounded-lg items-center text-2xl font-bold ${
+          className={`absolute z-20 w-full h-full top-0 p-2 transition-[right] duration-700 text-center flex justify-center bg-yellow-400 rounded-lg items-center text-2xl font-bold ${
             overlay
               ? "right-[520px] md:right-[390px] xl:right-[600px] "
               : "left-[0px]"

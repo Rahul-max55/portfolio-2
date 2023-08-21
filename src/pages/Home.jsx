@@ -44,12 +44,12 @@ const Home = ({color , setColor}) => {
         <div className="w-11/12 md:w-7/12 lg:w-6/12 h-80 space-y-4 flex justify-between items-start sm:items-center">
           <div className=" w-10/12 h-full flex justify-between items-start flex-col">
             <p className="text-white text-2xl">Hi THERE!</p>
-            <h1 className="text-white text-3xl lg:text-5xl flex font-extrabold">
+            <h1 className="text-white text-3xl lg:text-[40px] flex font-extrabold">
               I'M
               <span style={textValue} className={`ml-3`}>
                 <Typewriter
                   options={{
-                    strings: ["Hello Hr", "World"],
+                    strings: ["Rahul Birla", "A Frontend Developer" , "A Backend Develoepr"],
                     autoStart: true,
                     loop: true,
                   }}
@@ -57,24 +57,21 @@ const Home = ({color , setColor}) => {
               </span>
             </h1>
             <p className="text-white text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam, corrupti. Rerum excepturi quo accusantium, nobis
-              voluptatibus tenetur iusto facilis amet sed provident minus
-              aspernatur debitis repudiandae nostrum aperiam eum quam.
+             I'm MERN stack developer with a knack for crafting dynamic and user-centric web applications. With a solid foundation in MongoDB, Express.js, React, and Node.js, I thrive on turning innovative ideas into polished digital experiences.
             </p>
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-              <Link to="/about" style={{...borderValue , ...bgValue}} className={`flex px-5 py-2 md:py-3 items-center justify-center transition-colors text-base xl:text-xl font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:text-white hover:bg-white/20`}>
+              <Link to="/about" style={{...borderValue , ...bgValue}} className={`flex px-5 py-2 md:py-3 items-center justify-center transition-colors text-base xl:text-xl font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:text-white hover:!border-sky-500`}>
                 <CgProfile /> <span>MORE ABOUT ME </span>
               </Link>
-              <Link style={borderValue} to="/portfolio" className={`flex py-2 md:py-3 px-4 items-center justify-center border-2 border-data text-base xl:text-xl font-medium text-white space-x-2 hover:text-white rounded-full shadow-lg hover:bg- `}>
+              <Link style={borderValue} to="/portfolio" className={`flex py-2 md:py-3 px-4 items-center justify-center border-2 border-data text-base xl:text-xl font-medium text-white space-x-2 hover:text-white rounded-full shadow-lg hover:!border-sky-500 `}>
                 <AiFillProfile />
                 <span>PORTFOLIO</span>
               </Link>
             </div>
           </div>
           <div className="bg-gray-300 relative w-16 h-16  rounded-full flex justify-center text-4xl items-center ">
-            <SlSettings className="animate-spin" onClick={handleOpen} />
-            <span className={`absolute transition-all duration-200 overflow-hidden right-20  rounded-lg shadow-lg z-50 flex justify-around items-center flex-col bg-red-600 {${openModal ? "opacity-1 w-12 p-2 h-56 " : "h-0 w-0 p-0 opacity-0"}}`} >
+            <SlSettings className="animate-spin cursor-pointer" onClick={handleOpen} />
+            <span className={`absolute transition-all duration-200 overflow-hidden right-20  rounded-lg shadow-lg z-50 flex justify-around items-center flex-col bg-white {${openModal ? "opacity-1 w-12 p-2 h-56 " : "h-0 w-0 p-0 opacity-0"}}`} >
                 <button onClick={()=> setColor("#fd7e14")} className="w-10 h-10 rounded-full bg-[#fd7e14]">{color==="#fd7e14" ? <BsCheckAll className="text-white" /> : ""}</button>
                 <button onClick={()=> setColor("#28a745")} className="w-10 h-10 rounded-full bg-[#28a745]">{color==="#28a745" ? <BsCheckAll className="text-white" /> : ""}</button>
                 <button onClick={()=> setColor("#007bff")} className="w-10 h-10 rounded-full bg-[#007bff]">{color==="#007bff" ? <BsCheckAll className="text-white" /> : ""}</button>
