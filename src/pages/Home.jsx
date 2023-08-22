@@ -32,6 +32,7 @@ const Home = ({color , setColor}) => {
         style={{
           backgroundImage: `url(${cover})`,
           backgroundSize: "100% 100%",
+          backgroundRepeat:"no-repeat",
         }}
       >
 
