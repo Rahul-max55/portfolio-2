@@ -22,7 +22,7 @@ const Portfolio = ({color}) => {
         </div>
         <div className="flex pb-10 justify-center items-center text-center ">
           <hr tyle={bgValue} className="bg-yellow-400 w-20 h-1" />
-          <span s className="px-4">
+          <span s className="px-4 opacity-80">
             I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
           </span>
           <hr tyle={bgValue} className="bg-yellow-400 w-20 h-1" />

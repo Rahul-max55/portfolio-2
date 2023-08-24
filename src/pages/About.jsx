@@ -24,16 +24,16 @@ const About = ({ color }) => {
       </div>
       <div className="flex pb-10 justify-center items-center text-center ">
         <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
-        <span className="px-4">
+        <span className="px-4 opacity-80">
           I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
         </span>
         <hr style={bgValue} className="bg-yellow-400 w-20 h-1" />
       </div>
 
-      <div className="sm:w-[80vw] text-white bg-emerald-900 m-auto min-h-screen flex justify-between items-center xl:flex-row flex-col">
+      <div className="sm:w-[80vw] text-white  m-auto min-h-screen flex justify-between items-center xl:flex-row flex-col">
         {/* image and border */}
-        <div className="w-screen sm:w-[570px] md:w-[600px] m-auto sm:m-0 h-fit sm:min-h-screen bg-green-400">
-          <span className="relative w-screen sm:w-0 h-full bg-purple-500">
+        <div className="w-screen sm:w-[570px] md:w-[600px] m-auto sm:m-0 h-fit sm:min-h-screen ">
+          <span className="relative w-screen sm:w-0 h-full">
             <img
               src={profile}
               alt="photo"
@@ -41,43 +41,43 @@ const About = ({ color }) => {
             />
             <div
               style={borderValue}
-              className=" bg-blue-400 w-10/12 h-full hidden sm:block top-8 left-16 md:left-8 xl:left-12 absolute border-[8px] border-yellow-500"
+              className="w-10/12 h-full hidden sm:block top-8 left-16 md:left-8 xl:left-12 absolute border-[8px] border-yellow-500"
             ></div>
           </span>
         </div>
         {/*End image and border */}
 
         {/* details */}
-        <div className="bg-red-500 p-4 md:p-0 w-full md:w-10/12 xl:w-1/2 min-h-96 ">
-          <ul className="bg-blue-400 w-full text-base h-5/6 flex flex-col sm:flex-row items-center sm:items-start sm:justify-between md:justify-around xl:justify-between p-2 sm:p-0">
-            <div className="bg-blue-900 grid gap-4 min-w-[220px]">
-              <span className="bg-lime-500 w-full h-[30px]">
+        <div className=" p-4 md:p-0 w-full md:w-10/12 xl:w-1/2 min-h-96 ">
+          <ul className=" w-full text-base min-h-[350px] flex flex-col sm:flex-row items-center sm:items-start sm:justify-between md:justify-around xl:justify-between p-2 sm:p-0">
+            <div className=" grid gap-8 min-w-[220px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
                 First Name : <span className="float-right"> Rahul</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
                 Last Name : <span className="float-right"> Birla</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
                 Birthdate : <span className="float-right">10 oct 1998</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
                 Nanationlity : <span className="float-right"> India</span>
               </span>
-              <span className="bg-lime-500 w-full mb-4 md:mb-0 h-[30px]">
+              <span className="w-full mb-8 md:mb-0 h-[30px] border-b border-gray-300">
                 Experience : <span className="float-right"> 1.7 Years</span>
               </span>
             </div>
-            <div className="bg-blue-900 grid gap-4 min-w-[220px]">
-              <span className="bg-lime-500 w-full h-[30px]">
+            <div className=" grid gap-8 min-w-[220px]">
+              <span className="w-full h-[30px]  border-b border-gray-300">
                 Langages : <span className="float-right"> English, Hindi</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
               Phone no : <span className="float-right"> 9907761728</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
               Email : <span className="float-right">  birlarahul340@gamil.com</span>
               </span>
-              <span className="bg-lime-500 w-full h-[30px]">
+              <span className="w-full h-[30px] border-b border-gray-300">
               address : <span className="float-right">Indore</span>
               </span>
              
@@ -111,14 +111,14 @@ const About = ({ color }) => {
             className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
-            <li className="flex items-center ">
+            <li className="flex items-center opacity-80">
               <ImCalendar className="mr-2" /> Apr 2023 – present (Indore)
             </li>
             <li className="text-xl my-2">
               Full Stack Developer -{" "}
               <span className="font-medium">Tophat Software Pvt. Ltd</span>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 opacity-80">
               I am currently working in Tophat Software Pvt. Ltd as a MERN stack
               developer. Using my skills I have developed many websites.
             </li>
@@ -129,14 +129,14 @@ const About = ({ color }) => {
             className="w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
-            <li className="flex items-center ">
-              <ImCalendar className="mr-2" /> Feb 2022 - Mar 2023 (Indore)
+            <li className="flex items-center opacity-80">
+              <ImCalendar className="mr-2 " /> Feb 2022 - Mar 2023 (Indore)
             </li>
             <li className="text-xl my-2">
               Full Stack Developer -{" "}
               <span className="font-medium">sonnen Techs</span>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 opacity-80">
               I am working in Sonnen techs as a MERN stack developer. I am
               learning new technology to grow my organisation.
             </li>
@@ -151,7 +151,7 @@ const About = ({ color }) => {
           >
             <span></span>
             <li className="flex items-center ">
-              <ImCalendar className="mr-2" /> 2022-2024
+              <ImCalendar className="mr-2 opacity-80" /> 2022-2024
             </li>
             <li className="text-xl my-2">
               Master of Computer Application(MCA) -
@@ -164,14 +164,14 @@ const About = ({ color }) => {
             className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
-            <li className="flex items-center ">
+            <li className="flex items-center opacity-80">
               <ImCalendar className="mr-2" /> 2016-2019
             </li>
             <li className="text-xl my-2">
               Bachelor of Computer Science(BSc) -
               <span className="font-medium">indore</span>
             </li>
-            <li className="mb-4">
+            <li className="mb-4 opacity-80">
               Chameli Devi Institute of Professional Studies
             </li>
           </ul>
@@ -180,28 +180,28 @@ const About = ({ color }) => {
             className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
-            <li className="flex items-center ">
-              <ImCalendar className="mr-2" /> 2016
+            <li className="flex items-center opacity-80 ">
+              <ImCalendar className="mr-2 " /> 2016
             </li>
             <li className="text-xl my-2">
-              Higher Secondary Certificate (Class 12th) -{" "}
+              Higher Secondary Certificate (Class 12th) -
               <span className="font-medium">Mhow</span>
             </li>
-            <li className="mb-4">Government Higher Secondary School</li>
+            <li className="mb-4 opacity-80">Government Higher Secondary School</li>
           </ul>
           <ul
             style={borderValue}
             className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
-            <li className="flex items-center ">
+            <li className="flex items-center opacity-80">
               <ImCalendar className="mr-2" /> 2014
             </li>
             <li className="text-xl my-2">
-              Secondary School Certificate (Class 10th) -{" "}
+              Secondary School Certificate (Class 10th) -
               <span className="font-medium">Pithampur</span>
             </li>
-            <li className="mb-4">New Genius Higher Secondary School</li>
+            <li className="mb-4 opacity-80">New Genius Higher Secondary School</li>
           </ul>
         </div>
       </div>
