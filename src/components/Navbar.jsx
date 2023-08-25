@@ -31,7 +31,7 @@ const Navbar = ({color}) => {
     <>
       <div
         className={`bg-gray-600 w-14 md:w-20 rounded-full top-12 md:top-24 z-40 left-6 sm:left-10 fixed transition-all duration-500 ease-linear flex justify-evenly items-center  flex-col ${
-          hideNav ? "h-14 md:h-20 overflow-hidden" : "h-96"
+          hideNav ? "h-14 md:h-20 overflow-hidden" : "h-80"
         }`}
       >
         <div data-modal-target="defaultModal"
@@ -77,14 +77,14 @@ const Navbar = ({color}) => {
             <HiMail />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >CONTACT</span>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/blog"
             style={active}
             className="relative  cursor-pointer"
           >
             <ImBlogger />
             <span className="absolute top-0 left-16 text-xl bg-gray-500  px-2 rounded-lg" >BLOG</span>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </>

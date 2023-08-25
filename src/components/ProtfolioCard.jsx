@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import project1 from "../Assets/project-1.jpg";
 
 
-const ProtfolioCard = ({bgValue}) => {
+const ProtfolioCard = ({bgValue  , values}) => {
 
+  console.log(values);
+
+  const {name , url , image} = values;
+
+  console.log(name);
     const [overlay, setOverlay] = useState(true);
 
     const handleHover = () => {
@@ -12,10 +16,10 @@ const ProtfolioCard = ({bgValue}) => {
 
   return (
     <>
-      <span className="relative overflow-hidden">
+      <a href={url} target="_blank" className="relative overflow-hidden">
         <span className="w-full h-full" onMouseOver={handleHover}>
           <img
-            src={project1}
+            src={image}
             alt="porject1"
             className="rounded-lg relative z-20"
           />
@@ -29,9 +33,9 @@ const ProtfolioCard = ({bgValue}) => {
               : "left-[0px]"
           }`}
         >
-          Lorem ipsum dolor sit ametwsd.
+          {name}
         </p>
-      </span>
+      </a>
     </>
   );
 };

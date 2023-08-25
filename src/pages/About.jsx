@@ -1,6 +1,5 @@
 import React from "react";
-import profile from "../Assets/dark-about.jpg";
-import { Link } from "react-router-dom";
+import profile from "../Assets/aboutPhoto.jpg";
 import { ImCalendar, ImDownload3 } from "react-icons/im";
 import { motion } from "framer-motion";
 
@@ -99,7 +98,7 @@ const About = ({ color }) => {
       {/* Experience Section */}
 
       <div
-        className="w-10/12 m-auto flex-col lg:flex-row lg:pt-20
+        className="w-10/12 m-auto h flex-col lg:flex-row lg:pt-5
        flex justify-around items-start  bg-[#222]"
       >
         <div className="w-full md:w-11/12 lg:w-1/2 py-4 flex justify-between flex-col items-start">
@@ -108,7 +107,7 @@ const About = ({ color }) => {
           </h2>
           <ul
             style={borderValue}
-            className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className=" w-10/12 pb-2 border-l-4 border-b space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center opacity-80">
@@ -126,7 +125,7 @@ const About = ({ color }) => {
 
           <ul
             style={borderValue}
-            className="w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className="w-10/12 pb-2 border-l-4 border-b pt-5 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center opacity-80">
@@ -147,7 +146,7 @@ const About = ({ color }) => {
           <h2 className="text-2xl  text-white font-semibold py-4">EDUCATION</h2>
           <ul
             style={borderValue}
-            className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className=" w-10/12 border-b pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center ">
@@ -161,7 +160,7 @@ const About = ({ color }) => {
           </ul>
           <ul
             style={borderValue}
-            className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className=" w-10/12 border-b pt-5 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center opacity-80">
@@ -177,7 +176,7 @@ const About = ({ color }) => {
           </ul>
           <ul
             style={borderValue}
-            className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className=" w-10/12 pb-2 border-l-4 border-b pt-5 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center opacity-80 ">
@@ -191,7 +190,7 @@ const About = ({ color }) => {
           </ul>
           <ul
             style={borderValue}
-            className=" w-10/12 pb-2 border-l-4 space-x-3 border-yellow-400 min-h-44 "
+            className=" w-10/12 pb-2 border-l-4 border-b pt-5 space-x-3 border-yellow-400 min-h-44 "
           >
             <span></span>
             <li className="flex items-center opacity-80">
