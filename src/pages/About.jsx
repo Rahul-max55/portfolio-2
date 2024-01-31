@@ -81,14 +81,14 @@ const About = ({ color }) => {
                 address : <span className="float-right">Indore</span>
               </span>
 
-              {/* <a
+              <a
                 target="_blanck"
-                href="https://drive.google.com/file/d/1uQf9K-wqWc3_JlEYlGIL9lS21-JYVi8n/view?usp=sharing"
+                href="https://drive.google.com/file/d/1E-_94PQdnwdmakk1_U_HmLxns-xBR_8G/view?usp=sharing"
                 style={bgValue}
                 className="flex px-1 py-2 md:px-5 md:py-2 items-center justify-center bg-yellow-500 transition-colors text-sm md:text-base xl:text-base font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:bg-transparent"
               >
                 <ImDownload3 /> <span>Downlaod My CV</span>
-              </a> */}
+              </a>
             </div>
           </ul>
         </div>
