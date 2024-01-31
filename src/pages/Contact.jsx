@@ -15,7 +15,7 @@ const Contact = ({ color }) => {
 
   const initialValues = {
     name: "",
-    email: "",
+    subject: "",
     message: "",
   };
 
@@ -25,9 +25,6 @@ const Contact = ({ color }) => {
     initialValues: initialValues,
     validationSchema: contactSchema,
     onSubmit: async (formData) => {
-      console.log(form);
-      console.log(formData);
-
       try {
         const result = await emailjs.sendForm(
           "service_7rc752a",
@@ -35,11 +32,13 @@ const Contact = ({ color }) => {
           form.current,
           "LNtinvAM9sLrjV2gO",
         );
+        console.log("🚀 ~ onSubmit: ~ result:", result)
+        
        if(!result.status){
         alert("message is not send to the Rahul Birla");
        }
 
-       alert("message is successfuly send to the Rahul");
+       alert("message is successfully send to the Rahul Birla");
       } catch (error) {
         console.log(error);
       }
@@ -80,7 +79,7 @@ const Contact = ({ color }) => {
             </span>
 
             <span className="flex  flex-col py-4 items-start justify-center">
-              <h3 className="px-2 pl-0 opacity-80">Email: </h3>
+              <h3 className="px-2 pl-0 opacity-80">Subject: </h3>
               <span className="flex items-center justify-center">
                 <BsWhatsapp className="mr-4" /> birlarahul340@gmail.com
               </span>
@@ -94,8 +93,7 @@ const Contact = ({ color }) => {
           </div>
           <div className=" w-full sm:w-9/12 pb-3 min-h-80 flex  flex-col items-center justify-between">
             <h3 className="text-lg py-6 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              quo dolore porro.
+            You can contact me by filling out a few details
             </h3>
             <form
             ref={form}
@@ -108,7 +106,7 @@ const Contact = ({ color }) => {
                   <input
                     className="flex-1 bg-transparent focus:outline-none overflow-hidden"
                     type="text"
-                    placeholder="Enter something..."
+                    placeholder="please enter your name"
                     name="name"
                     value={values.name}
                     onChange={handleChange}
@@ -122,13 +120,13 @@ const Contact = ({ color }) => {
                   <input
                     className="bg-transparent focus:outline-none overflow-hidden"
                     type="text"
-                    placeholder="Enter something..."
-                    value={values.email}
-                    name="email"
+                    placeholder="Subject of Message"
+                    value={values.subject}
+                    name="subject"
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                {errors.email && <p className="text-red-400 absolute -top-12 lg:-top-6">{errors.email}</p>}
+                {errors.subject && <p className="text-red-400 absolute -top-12 lg:-top-6">{errors.subject}</p>}
                 </div>
               </div>
              
@@ -141,7 +139,7 @@ const Contact = ({ color }) => {
                 cols="10"
                 rows="5"
                 value={values.message}
-                placeholder="Write Your Message"
+                placeholder="Write your message here..."
                 className={`${!errors.message && "m-4 p-2"} mb-4 bg-[#333] w-full lg:w-11/12  border border-[#444] outline-none  resize-none rounded-lg`}
                 onChange={handleChange}
                 onBlur={handleBlur}

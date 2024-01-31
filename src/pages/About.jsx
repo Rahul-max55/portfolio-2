@@ -63,7 +63,7 @@ const About = ({ color }) => {
                 Nanationlity : <span className="float-right"> India</span>
               </span>
               <span className="w-full mb-8 md:mb-0 h-[30px] border-b border-gray-300">
-                Experience : <span className="float-right"> 1.7 Years</span>
+                Experience : <span className="float-right"> 10 Months</span>
               </span>
             </div>
             <div className=" grid gap-8 min-w-[220px]">
@@ -71,23 +71,24 @@ const About = ({ color }) => {
                 Langages : <span className="float-right"> English, Hindi</span>
               </span>
               <span className="w-full h-[30px] border-b border-gray-300">
-              Phone no : <span className="float-right"> 9907761728</span>
+                Phone no : <span className="float-right"> 9907761728</span>
               </span>
               <span className="w-full h-[30px] border-b border-gray-300">
-              Email : <span className="float-right">  birlarahul340@gamil.com</span>
+                Email :{" "}
+                <span className="float-right"> birlarahul340@gamil.com</span>
               </span>
               <span className="w-full h-[30px] border-b border-gray-300">
-              address : <span className="float-right">Indore</span>
+                address : <span className="float-right">Indore</span>
               </span>
-             
-              <a
+
+              {/* <a
                 target="_blanck"
                 href="https://drive.google.com/file/d/1uQf9K-wqWc3_JlEYlGIL9lS21-JYVi8n/view?usp=sharing"
                 style={bgValue}
                 className="flex px-1 py-2 md:px-5 md:py-2 items-center justify-center bg-yellow-500 transition-colors text-sm md:text-base xl:text-base font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:bg-transparent"
               >
                 <ImDownload3 /> <span>Downlaod My CV</span>
-              </a>
+              </a> */}
             </div>
           </ul>
         </div>
@@ -111,33 +112,37 @@ const About = ({ color }) => {
           >
             <span></span>
             <li className="flex items-center opacity-80">
-              <ImCalendar className="mr-2" /> Apr 2023 – present (Indore)
+              <ImCalendar className="mr-2" /> March 2023 – Dec 2023
             </li>
             <li className="text-xl my-2">
-              Full Stack Developer -{" "}
-              <span className="font-medium">Tophat Software Pvt. Ltd</span>
+              MERN Stack Developer -
+              <span className="font-medium"> Tophat Software Pvt. Ltd</span>
             </li>
             <li className="mb-4 opacity-80">
-              I am currently working in Tophat Software Pvt. Ltd as a MERN stack
-              developer. Using my skills I have developed many websites.
-            </li>
-          </ul>
-
-          <ul
-            style={borderValue}
-            className="w-10/12 pb-2 border-l-4 border-b pt-5 space-x-3 border-yellow-400 min-h-44 "
-          >
-            <span></span>
-            <li className="flex items-center opacity-80">
-              <ImCalendar className="mr-2 " /> Feb 2022 - Mar 2023 (Indore)
-            </li>
-            <li className="text-xl my-2">
-              Full Stack Developer -{" "}
-              <span className="font-medium">sonnen Techs</span>
-            </li>
-            <li className="mb-4 opacity-80">
-              I am working in Sonnen techs as a MERN stack developer. I am
-              learning new technology to grow my organisation.
+              <strong>Key responsibilities:</strong>
+              <br /> <strong>Frontend Development:</strong> Utilized React.js
+              for building dynamic and interactive user interfaces. Employed
+              Redux for efficient state management, ensuring a predictable flow
+              of data within the application.
+              <br /> <strong>Implementing UI Designs:</strong> Collaborating
+              with designers to convert wireframes and UI designs into
+              functional React components, ensuring pixel-perfect implementation
+              and responsiveness across different devices.
+              <br /> <strong>Integration:</strong> Worked closely with backend
+              developers to seamlessly integrate frontend interfaces with robust
+              server-side applications. Backend Development: Architected and
+              developed robust server-side applications using Node.js,
+              Express.js, and other relevant technologies.
+              <br /> <strong> RESTful APIs:</strong> Designed and implemented
+              RESTful APIs, prioritizing secure authentication and
+              authorization.
+              <br /> <strong> Optimization:</strong> Ensured optimal performance
+              and scalability of backend systems to meet project demands.
+              <br /> <strong> Collaboration:</strong> Collaborated with
+              front-end developers to integrate server-side logic with the user
+              interface.
+              <br /> <strong> Data Flow:</strong> Ensured seamless data flow
+              between the front-end and back-end.
             </li>
           </ul>
         </div>
@@ -186,7 +191,9 @@ const About = ({ color }) => {
               Higher Secondary Certificate (Class 12th) -
               <span className="font-medium">Mhow</span>
             </li>
-            <li className="mb-4 opacity-80">Government Higher Secondary School</li>
+            <li className="mb-4 opacity-80">
+              Government Higher Secondary School
+            </li>
           </ul>
           <ul
             style={borderValue}
@@ -200,7 +207,9 @@ const About = ({ color }) => {
               Secondary School Certificate (Class 10th) -
               <span className="font-medium">Pithampur</span>
             </li>
-            <li className="mb-4 opacity-80">New Genius Higher Secondary School</li>
+            <li className="mb-4 opacity-80">
+              New Genius Higher Secondary School
+            </li>
           </ul>
         </div>
       </div>
