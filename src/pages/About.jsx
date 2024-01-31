@@ -83,7 +83,7 @@ const About = ({ color }) => {
 
               <a
                 target="_blanck"
-                href="https://drive.google.com/file/d/1E-_94PQdnwdmakk1_U_HmLxns-xBR_8G/view?usp=sharing"
+                href="https://drive.google.com/file/d/1uaJv-Moi7H82Jrh0U3KV_6DkI_pjk-9d/view?usp=drive_link"
                 style={bgValue}
                 className="flex px-1 py-2 md:px-5 md:py-2 items-center justify-center bg-yellow-500 transition-colors text-sm md:text-base xl:text-base font-medium text-white space-x-2 rounded-full shadow-lg border-2  hover:bg-transparent"
               >
